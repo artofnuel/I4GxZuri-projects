@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/72fc22474a.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+        body {
+            background-color: #180c04;
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+        }
+        .total {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        header {
+            width: 100%;
+            height: 70px;
+            background-color: #571845;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            }
+            ul {
+            display: flex;
+            list-style-type: none;
+            gap: 100px;
+            }
+        ul li a {
+            color: white;
+            padding: 0px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 900;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+        main {
+            width: 100%;
+            margin-top: 100px;
+            max-width: 1000px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: auto;
+        }
+        .item {
+            padding: 120px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 50px;
+            color: white;
+        }
+        i {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size:25px;
+            border: 2px solid white;
+            border-radius: 100%;
+            padding: 10px;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 20px;
+        }
+        #g1 {
+            background-color: #633729;
+            border-radius: 35px 0px 0px 35px;
+        }
+        #g2 {
+            background-color: #CB6E2D;
+        }
+        #g3 {
+            background-color: #C03B22;
+            border-radius: 0px 35px 35px 0px;
+        }
+        
+        .button {
+            width: 100%;
+        }
+        input[type=button] {
+            width: 100%;
+            background-color: #180c04;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: 1px solid #180c04;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        input[type=button]:hover {
+            background-color: #fff;
+            color: #180c04;
+            border: 1px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="total">
+        <header>
+            <div class="nav">
+              <nav>
+                <ul class="links">
+                  <li>
+                    <a href="/Zuri Assignments/Column card design Flexbox and Grid/index.html">Index</a>
+                  </li>
+                  <li>
+                    <a href="/Zuri Assignments/Column card design Flexbox and Grid/grid.html">Grid</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+        <main>
+            <div class="grid">
+                <div class="item" id="g1">
+                    <i class="fa-solid fa-car-side"></i>
+                    <h1>Sedan</h1>
+                    <p>Choose a sedan for its affordability and excelent fuel
+                        economy. Ideal for cruising in the city or on your next road trip.
+                    </p>
+                    <div class="button">
+                        <input type="button" value="Learn More">
+                    </div>
+                </div>
+                <div class="item" id="g2">
+                    <i class="fa-solid fa-truck-pickup"></i>
+                    <h1>Pickups</h1>
+                    <p>Take a pickup for its spacious interior, power, and
+                        versatility. Perfect for your next family vacation and
+                        off-road adventures.
+                    </p>
+                    <div class="button">
+                        <input type="button" value="Learn More">
+                    </div>
+                </div>
+                <div class="item" id="g3">
+                    <i class="fa-solid fa-motorcycle"></i>
+                    <h1>Energy</h1>
+                    <p>Cruise in the best car brands without the bloated prices.
+                        Enjoy the luxury rental and arrive in style.
+                    </p>
+                    <div class="button">
+                        <input type="button" value="Learn More">
+                    </div>  
+                </div>
+            </div> 
+        </main>
+    </div>
+</body>
+</html>
